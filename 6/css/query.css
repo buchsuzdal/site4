@@ -1,0 +1,109 @@
+.menu-under-1 {
+    display: none;
+}
+
+.menu-under-2 {
+    display: none;
+}
+
+.menu-under-3 {
+    display: none;
+}
+
+.side-avito {
+    display: flex;
+    margin: 10px 0 0 0;
+    width: 100%;
+    height: 116px;
+    background-color: #fff;
+    background-image: url('../img/avito.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.side-avito:hover {
+    cursor: pointer;
+}
+
+.side-yandex {
+    display: flex;
+    margin: 30px 0 0 0;
+    width: 100%;
+    height: 116px;
+    background-color: rgb(47, 0, 177);
+    background-image: url('../img/yandex.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.side-yandex:hover {
+    cursor: pointer;
+}
+
+.selected { 
+    text-shadow: rgb(11, 11, 11) 1px 3px 3px;
+}
+
+.se { 
+    background-color: rgba(111, 0, 255, 0.22);
+}
+
+.side-scale-minus {
+    font-size: 48px;
+    transition: 1s;
+}
+
+.side-scale-plus {
+    font-size: 72px;
+    transition: 1s;
+}
+
+.side-avito-text {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 150px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.side-avito-text-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: Arial;
+}
+
+.side-yandex-text {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 150px;
+    font-family: Arial;
+    color: #fff;
+}
+
+.side-yandex-text-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: Arial;
+    color: #fff;
+    margin: 0 0 0 20px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}

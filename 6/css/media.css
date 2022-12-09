@@ -1,0 +1,267 @@
+@media all and (max-width: 950px)
+{
+    .enchant-table {
+        border: 1px solid rgb(41, 41, 41);
+        max-width: 100%;
+    }
+    
+    .table-title {
+        text-align: center;
+        background-color: rgba(204, 204, 204, 0.300);
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .table-title-side {
+        background-color: rgba(204, 204, 204, 0.300);
+        font-weight: bold;
+        font-style: italic;
+    }
+    
+    .enchant-table-item {
+        border: 1px solid rgb(41, 41, 41);
+        padding: 5px;
+        text-transform: capitalize;
+        font-size: 10px;
+    }
+
+    .effect {
+        text-transform: none;
+    }
+    
+    .effect-capitalize {
+        text-transform: capitalize;
+    }
+}
+
+@media all and (max-width: 600px) {  
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    max-width: 600px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'montserrat';
+    max-width: 600px;
+}
+
+.header-nav {
+    margin: 0 auto;
+    height: 50px;
+    max-width: 800px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+}
+
+
+.cube-wrp {
+    animation: cube-wrp;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+.cube {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 4s linear infinite;
+    }
+
+.cube .div-common .span-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/logo-side.png');
+    background-size: contain;
+    transform: rotateY(calc(90deg * var(--i))) translateZ(32px);
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 64px;
+    background-image: url('../img/logo-top.png');
+    background-size: contain;
+    transform: rotateX(90deg) translateZ(32px);
+}
+
+.top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 64px;
+    background: rgb(78, 78, 78);
+    transform: translateZ(-100px);
+    filter: blur(20px); 
+    box-shadow: 0 0 120px rgba(0, 0, 0, 0.2),
+    0 0 200px rgba(0, 0, 0, 0.4),
+    0 0 250px rgba(46, 46, 46, 0.6),
+    0 0 300px rgba(70, 70, 70, 0.8),
+    0 0 350px rgb(107, 107, 107);
+}
+
+.side {
+    position: fixed;
+    top: 10px;
+    left: 75px;
+    z-index: 10;
+}
+
+.side-item {
+    height: 113px;
+    width: 240px;
+}
+
+.header-title {
+    margin: 0 0 60px 0;
+    font-family: 'minecraft';
+    font-size: 60px;
+    text-align: center;
+    background: linear-gradient(360deg, rgba(159,129,84,1) 47%, rgba(55,198,86,1) 64%);
+    background-clip: rgba(55,198,86,1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-wrp {
+    padding-top: 25px;
+}
+
+.header-nav-wrp {
+    display: block;
+    padding: 0;
+}
+
+.header-nav {
+    margin: 0 0 0 0;
+    display: block;
+}
+
+.nav-menu {
+    margin: 80px 0 0 0;
+    color: black;
+    max-width: 400px;
+}
+
+.nav-menu-list {
+    display: block;
+    margin: 0;
+}
+
+.nav-menu-list-item {
+    display: block;
+}
+
+.menu-list-link {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'montserrat';
+    line-height: 45px;
+    position: relative;
+}
+
+.menu-list-link:hover {
+    font-weight: normal;
+    font-size: 20px;
+    text-shadow: rgb(51, 51, 51) 3px 5px 5px;
+}
+
+.menu-list-link::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    /* border: 1px solid #fff; */
+    background-image: url('../img/workbench.png');
+    background-size: contain;
+    position: absolute;
+    top: -4px;
+    left: -45px;
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+.side-2 {
+    margin: 375px 0 0 50px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.text {
+    font-family: 'montserrat';
+    font-size: 16px;
+    text-shadow: rgb(0, 0, 0) 0 0 20px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.video-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-block-item {
+    margin: 0 0 20px 0;
+    max-height: 170px;
+}
+
+.cake-img {
+    height: 128px;
+}
+
+.enchant-table {
+    border: 1px solid rgb(41, 41, 41);
+    font-size: 5px;
+    max-width: 400px;
+}
+
+.enchant-table-item {
+    border: 1px solid rgb(41, 41, 41);
+    font-size: 10px;
+    padding: 0;
+}
+
+.table-title {
+    text-align: center;
+    background-color: rgba(204, 204, 204, 0.300);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer-wrp {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 100px 0 0;
+}
+
+}
